@@ -3,10 +3,10 @@
 ### Java README
 
 *Links to Code:*
-- [ASCII](java/ascii.java "Ascii Program")
-- [Copy Array](java/copyArray.java "Copy Array Program")
-- [Count Characters](java/countCharacters.java "Count Characters Program")
-- [File Write/Read Count Words](java/fileWriteReadCountWords.java "Write, Read, and Count Words Program")
+- [ASCII](ascii.java "Ascii Program")
+- [Copy Array](copyArray.java "Copy Array Program")
+- [Count Characters](countCharacters.java "Count Characters Program")
+- [File Write/Read Count Words](fileWriteReadCountWords.java "Write, Read, and Count Words Program")
 
 #### Screenshots of running code:
 | *ASCII Program*                               |
