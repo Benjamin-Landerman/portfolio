@@ -46,7 +46,15 @@
 							<tr>
 								<th class="text-center">Fname</th>
 								<th class="text-center">Lname</th>
+								<th class="text-center">Street</th>
+								<th class="text-center">City</th>
+								<th class="text-center">State</th>
+								<th class="text-center">Zip</th>
+								<th class="text-center">Phone</th>
 								<th class="text-center">Email</th>
+								<th class="text-center">Balance</th>
+								<th class="text-center">Total Sales</th>
+								<th class="text-center">Notes</th>
 								<th class="text-center">&nbsp;</th>
 								<th class="text-center">&nbsp;</th>
 							</tr>
@@ -58,7 +66,15 @@
 								<tr class="text-left">
 									<td><c:out value="${user.fname}" /></td>
 									<td><c:out value="${user.lname}" /></td>
+									<td><c:out value="${user.street}" /></td>
+									<td><c:out value="${user.city}" /></td>
+									<td><c:out value="${user.state}" /></td>
+									<td><c:out value="${user.zip}" /></td>
+									<td><c:out value="${user.phone}" /></td>
 									<td><c:out value="${user.email}" /></td>
+									<td class = "text-right"><c:out value="${user.balance}" /></td>
+									<td class = "text-right"><c:out value="${user.totalSales}" /></td>
+									<td><c:out value="${user.notes}" /></td>
 
 									<!-- Create form buttons and hidden input fields to pass data.  //-->
 									<% //for debugging, test input (test servlet provided): action="testInput" %>					

@@ -22,7 +22,7 @@
 		<div class="starter-template">
 					
 					<div class="page-header">
-						<%@ include file="/global/header.jsp" %>
+						<%@ include file="/p2/global/header.jsp" %>
 					</div>
 
     <h3>Thanks for joining our customer list!</h3>

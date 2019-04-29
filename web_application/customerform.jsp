@@ -97,6 +97,7 @@
 							 Use this servlet for testing: ShowParameters								
 					-->
 					
+					
 					<p><a href="customerAdmin?action=display_customers">Display Customers</a></p>
 
 					<% //for debugging, test input (test servlet provided): action="testInput" %>
@@ -135,21 +136,21 @@
 						<div class="form-group">
 							<label class="col-sm-4 control-label">State:</label>
 							<div class="col-sm-4">
-								<input type="text" class="form-control" maxlength="30" name="state" value="${customer.state}" />
+								<input type="text" class="form-control" maxlength="2" name="state" value="${customer.state}" />
 							</div>
 						</div>
 
 						<div class="form-group">
 							<label class="col-sm-4 control-label">Zip:</label>
 							<div class="col-sm-4">
-								<input type="text" class="form-control" maxlength="30" name="zip" value="${customer.zip}" />
+								<input type="text" class="form-control" maxlength="9" name="zip" value="${customer.zip}" />
 							</div>
 						</div>
 
 						<div class="form-group">
 							<label class="col-sm-4 control-label">Phone:</label>
 							<div class="col-sm-4">
-								<input type="text" class="form-control" maxlength="30" name="phone" value="${customer.phone}" />
+								<input type="text" class="form-control" maxlength="10" name="phone" value="${customer.phone}" />
 							</div>
 						</div>
 						
@@ -163,21 +164,21 @@
 						<div class="form-group">
 							<label class="col-sm-4 control-label">Balance:</label>
 							<div class="col-sm-4">
-								<input type="text" class="form-control" maxlength="30" name="balance" value="${customer.balance}" />
+								<input type="text" class="form-control" maxlength="7" name="balance" value="${customer.balance}" />
 							</div>
 						</div>
 
 						<div class="form-group">
 							<label class="col-sm-4 control-label">Total Sales:</label>
 							<div class="col-sm-4">
-								<input type="text" class="form-control" maxlength="30" name="total_sales" value="${customer.totalSales}" />
+								<input type="text" class="form-control" maxlength="7" name="total_sales" value="${customer.totalSales}" />
 							</div>
 						</div>
 
 						<div class="form-group">
 							<label class="col-sm-4 control-label">Notes:</label>
 							<div class="col-sm-4">
-								<input type="text" class="form-control" maxlength="30" name="notes" value="${customer.notes}" />
+								<input type="text" class="form-control" maxlength="255" name="notes" value="${customer.notes}" />
 							</div>
 						</div>
 						
@@ -194,7 +195,7 @@
 	</div> <!-- end container -->
 
 	<%-- test server-side validation, by not including client-side JavaScript --%>
- 	<%--@ include file="/js/include_js.jsp" --%>		
+ 	<%@ include file="/js/include_js.jsp" %>		
  
 <script type="text/javascript">
 $(document).ready(function() {

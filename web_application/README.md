@@ -1,3 +1,5 @@
+> **NOTE:** This README.md file should be placed at the **root of each of your main directory.**
+
 # LIS4368 - Advanced Web Applications Development
 
 ## Benjamin Landerman
@@ -38,3 +40,7 @@
     - Basic client-side validation for customer
     - Carousel contains three slides with text and images that link to other content areas
 7. [P2 README.md](p2/README.md "My P2 README.md file")
+    - Complete application using the MVC framework and provide CRUD functionality
+    - Client and server-side validation
+    - JSTL to prevent XSS
+    - Prepared statements to prevent SQL injection

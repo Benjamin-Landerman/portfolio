@@ -86,15 +86,15 @@ public class CustomerServlet extends HttpServlet
 		//from customers.jsp
 		else if (action.equals("modify_customer"))
 			{
-				//Customer user = CustomerDB.selectCustomer(cid);
-				//session.setAttribute("user", user); //setAttribute("name","value")
+				Customer user = CustomerDB.selectCustomer(cid);
+				session.setAttribute("user", user); //setAttribute("name","value")
 				url = "/modify.jsp"; //pass user to modify.jsp, and display data
 			}
 		//from customerform.jsp
 		else if (action.equals("display_customers"))
 			{
-				//ArrayList<Customer> users = CustomerDB.selectCustomers();            
-				//request.setAttribute("users", users);
+				ArrayList<Customer> users = CustomerDB.selectCustomers();            
+				request.setAttribute("users", users);
 				url = "/customers.jsp"; //pass user to customers.jsp, and display all values
 			}
 		//from customers.jsp
@@ -114,14 +114,14 @@ public class CustomerServlet extends HttpServlet
 				String phone_v = request.getParameter("phone");
 				String email_v = request.getParameter("email");
 				String balance_v = request.getParameter("balance");
-				String total_sales_v = request.getParameter("total_sales");
+				String totalSales_v = request.getParameter("total_sales");
 				String notes_v = request.getParameter("notes");
 				
 				//instantiate new customer object with associated object variable (user)
-				Customer user = new Customer(id_v, firstName_v, lastName_v, street_v, city_v, state_v, zip_v, phone_v, email_v, balance_v, total_sales_v, notes_v);
+				Customer user = new Customer(id_v, firstName_v, lastName_v, street_v, city_v, state_v, zip_v, phone_v, email_v, balance_v, totalSales_v, notes_v);
 
 				//call data input validation method: *Must* agree in TON: type, order, number!
-				if(!isValidInput(firstName_v, lastName_v, street_v, city_v, state_v, zip_v, phone_v, email_v, balance_v, total_sales_v, notes_v))
+				if(!isValidInput(firstName_v, lastName_v, street_v, city_v, state_v, zip_v, phone_v, email_v, balance_v, totalSales_v, notes_v))
 					{
 						message = "<span style='color: red; background-color: yellow; font-weight: bold; font-variant:small-caps;'>All text boxes required except Notes.</span>";
 						url = "/customerform.jsp";
@@ -136,17 +136,23 @@ public class CustomerServlet extends HttpServlet
 				request.setAttribute("user", user);
 				request.setAttribute("message", message);
 			}
-
-		/*
 		else if (action.equals("update_customer"))
 			{
 				// get parameters from the request
 				String firstName_v = request.getParameter("fname");
 				String lastName_v = request.getParameter("lname");
+				String street_v = request.getParameter("street");
+				String city_v = request.getParameter("city");
+				String state_v = request.getParameter("state");
+				String zip_v = request.getParameter("zip");
+				String phone_v = request.getParameter("phone");
 				String email_v = request.getParameter("email");
+				String balance_v = request.getParameter("balance");
+				String totalSales_v = request.getParameter("total_sales");
+				String notes_v = request.getParameter("notes");
 				
 				//call data input validation method: *Must* agree in TON: type, order, number!
-				if(!isValidInput(firstName_v, lastName_v, email_v))
+				if(!isValidInput(firstName_v, lastName_v, street_v, city_v, state_v, zip_v, phone_v, email_v, balance_v, totalSales_v, notes_v))
 					{
 						url = "/modify.jsp";
 					}
@@ -158,30 +164,39 @@ public class CustomerServlet extends HttpServlet
 						user.setId(cid); //cid retrieved from request.getParameter(action);
 						user.setFname(firstName_v);
 						user.setLname(lastName_v);
+						user.setStreet(street_v);
+						user.setCity(city_v);
+						user.setState(state_v);
+						user.setZip(zip_v);
+						user.setPhone(phone_v);
 						user.setEmail(email_v);
+						user.setBalance(balance_v);
+						user.setTotalSales(totalSales_v);
+						user.setNotes(notes_v);
 
 						// update customer				 
-						//CustomerDB.update(user);
+						CustomerDB.update(user);
 						
 						// display updated customers
-						//ArrayList<Customer> users = CustomerDB.selectCustomers();            
-						//request.setAttribute("users", users);
+						ArrayList<Customer> users = CustomerDB.selectCustomers();      
+						
+						request.setAttribute("users", users);
 						url = "/customers.jsp"; //pass user to customers.jsp page
 					}				
 			}
-		*/
+		
 			
 		else if (action.equals("delete_customer"))
 			{
 				// get customer
-				//Customer user = CustomerDB.selectCustomer(cid);
+				Customer user = CustomerDB.selectCustomer(cid);
 
 				// delete customer
-				//CustomerDB.delete(user);
+				CustomerDB.delete(user);
             
 				// display remaining customers
-				//ArrayList<Customer> users = CustomerDB.selectCustomers();            
-				//request.setAttribute("users", users);
+				ArrayList<Customer> users = CustomerDB.selectCustomers();            
+				request.setAttribute("users", users);
 
 				url = "/customers.jsp"; //pass user to customers.jsp page
 			}
