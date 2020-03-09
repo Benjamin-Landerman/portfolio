@@ -2,7 +2,7 @@
 
 ## Python README
 
-### Collection of my Python Programs
+### Sample of Data Analysis with Python
 
 *Links to Code:*
 - [Feature Selection](feature_selection.py "Feature Selection")

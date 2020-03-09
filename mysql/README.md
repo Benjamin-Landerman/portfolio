@@ -2,9 +2,11 @@
 
 ## MySQL README
 
-### Collection of MySQL Queries
+### Sample of MySQL Work
 
 *Links to Code:*
+- [Court Database](court_database.sql "Court Database")
+- [Court Queries](court_queries.sql "Court Queries")
 - [Finance Database](finance_database.sql "Finance Database")
 - [Finance Queries](finance_queries.sql "Finance Queries")
 - [Bank Database](bank_database.sql "Bank Database")
@@ -14,6 +16,10 @@
 
 #### Screenshots of ERDs:
 
-| *Bank Database ERD*                           | *Library DatabaseERD*                         |
+| *Court Database ERD*                          | *Bank Database ERD*                           |
 |:---------------------------------------------:|:---------------------------------------------:|
-|![Bank ERD](img/bank_erd.png)                  |![Library ERD](img/library_erd.png)            |
+|![Court ERD](img/court_erd.png)                |![Bank ERD](img/bank_erd.png)                  |
+
+| *Library Database ERD*                        |
+|:---------------------------------------------:|
+|![Library ERD](img/library_erd.png)            |

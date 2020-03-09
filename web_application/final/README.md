@@ -2,16 +2,9 @@
 
 ## Benjamin Landerman
 
-### Project 2 Requirements:
+### Final Screenshots:
 
-*Deliverables:*
-
-1. Complete application using the MVC framework and provide CRUD functionality
-2. Client and server-side validation
-3. JSTL to prevent XSS
-4. Prepared statements to prevent SQL injection
-
-#### README.md file should include the following items:
+#### Requirements:
 
 * Screenshot of Valid User Entry Form
 * Screenshot of Passed Validation
@@ -21,7 +14,7 @@
 * Screenshot of Delete Warning
 * Screenshot of Database Changes
 
-#### Assignment Screenshots Links:
+####  Screenshots:
 
 | *Screenshot of Valid User Entry Form*             | *Screenshot of Passed Validation*             |
 |:---------------------------------------------:    |:---------------------------------------------:|

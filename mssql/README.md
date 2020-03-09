@@ -2,7 +2,7 @@
 
 ## MS SQL README
 
-### Collection of Microsoft SQL Server Queries
+### Sample of Microsoft SQL Server Work
 
 *Links to Code:*
 - [Rental Database](rental_database.sql "Rental Database")
