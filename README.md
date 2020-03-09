@@ -1,4 +1,4 @@
-# Benjamin Landerman's Portfolio
+# Ben Landerman's Portfolio
 
 ### Main README
 
