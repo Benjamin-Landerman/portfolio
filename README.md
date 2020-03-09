@@ -12,8 +12,8 @@
 
 4. [Mobile Apps README.md](mobile_apps/README.md "Mobile Apps README.md file")
 
-5. [Scripts README.md](scripts/README.md "Scripts README.md file")
+5. [Web Application README.md](web_application/README.md "Web App README.md file")
 
 6. [Data Analysis README.md](data_analysis/README.md "Data Analysis README.md file")
 
-7. [Web Application README.md](web_application/README.md "Web App README.md file")
+7. [Scripts README.md](scripts/README.md "Scripts README.md file")
