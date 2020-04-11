@@ -6,6 +6,14 @@
 
 #### Screenshots of Android Apps:
 
+*RSS Feed*
+
+- Android app that displays a RSS Feed allowing users to view a short preview of an article with a link to the full article
+
+| *Screenshot of splash screen*                 | *Screenshot of main screen*                   | *Screenshot of selection*                     | *Screenshot of article*                       |
+|:---------------------------------------------:|:---------------------------------------------:|:---------------------------------------------:|:---------------------------------------------:|
+|![Splash](img/rss1.png)                        |![Main](img/rss2.png)                          |![Selection](img/rss3.png)                     |![Article](img/rss4.png)                       |
+
 *Media Player*
 
 - Android app that plays music based on user selection

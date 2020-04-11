@@ -5,6 +5,8 @@
 ### Sample of Microsoft SQL Server Work
 
 *Links to Code:*
+- [Office Supply Database](office_supply_database.sql "Office Supply Database")
+- [Office Supply Queries](office_supply_queries.sql "Office Supply Queries")
 - [Rental Database](rental_database.sql "Rental Database")
 - [Rental Queries](rental_queries.sql "Rental Queries")
 - [Hospital Database](hospital_database.sql "Hospital Database")
@@ -12,6 +14,10 @@
 
 #### Screenshots of ERDs:
 
-| *Rental Database ERD*                         | *Hospital Database ERD*                         |
+| *Office Supply Database ERD*                  | *Rental Database ERD*                         |
 |:---------------------------------------------:|:---------------------------------------------:|
-|![Rental ERD](img/rental_erd.png)              |![Hospital ERD](img/hospital_erd.png)              |
+|![Office Supply ERD](img/office_erd.png)       |![Rental ERD](img/rental_erd.png)              |
+
+| *Hospital Database ERD*                       |
+|:---------------------------------------------:|
+|![Hospital ERD](img/hospital_erd.png)          |
